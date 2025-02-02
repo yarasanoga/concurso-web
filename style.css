@@ -15,48 +15,51 @@ body {
 
 /* Estilo del header y la navegación */
 header {
-    background: rgb(240, 220, 180);
+    background: rgb(156, 172, 86);
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-nav{
-    background:url(inde.webp);
+
+nav {
+    background: url(inde.webp);
 
 }
-nav ul{
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     color: white;
-    font-size:1.5rem;
+    font-size: 1.5rem;
     background-color: #58585852;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
-  }
-  
-  nav ul li{ 
-      float: center;
-      text-align: center;
-      text-decoration: none;
-  }
-  
-  nav ul a {
-      display: block;
-      color: white;
-      padding: 16px;
-      text-decoration: none;
-  }
-    
-    nav ul a:hover {
-      background-color: #111111a4;
-    }
-nav.titulo{
+
+}
+
+nav ul li {
+    float: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    background-color: #111111a4;
+}
+
+nav.titulo {
     font-size: 30%;
-}  
+}
 
 /* Estilo para las páginas */
 .pagina {
@@ -70,20 +73,58 @@ nav.titulo{
 }
 
 .inicio {
-    background: url(inde.webp);
+    background: rgb(178, 192, 117);
     color: #333;
     text-align: center;
+
+
 }
-.inicio section{
+
+.inicio section {
     border-radius: 30px;
     background-color: rgba(221, 221, 221, 0.863);
     padding: 20px;
     margin: 10px;
+    width: 900px;
+    margin-left: 500px;
+
 }
 
+article {
+    background: url(inde.webp);
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    height: 900px;
+    box-shadow: 0 4px 8px rgba(133, 132, 132, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+article div {
+    margin-bottom: 150px;
+
+    border-radius: 8px;
+    background-color: rgba(221, 221, 221, 0.863);
+}
+
+article h5 {
+    color: #131313;
+}
+
+article img {
+    max-width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
 
 .menu {
-    background:url(ladri.jpg) ;
+    background: url(men.jpg);
     color: rgb(100, 98, 98);
     text-align: center;
 }
@@ -91,80 +132,84 @@ nav.titulo{
 
 
 .reservas {
-    background: url(reser.jpg) ;
+    background: url(reser.jpg);
     color: white;
     text-align: center;
-   background-repeat: no-repeat;
-   background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.eventos{
+.eventos {
     text-align: center;
-    background:url(madera.avif);
-    color: #f0f9ff;
+    background: url(made.avif);
+    color: #111111;
 
+}
+h2, h3, h4, h5, h6, p, li{
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 /* Títulos */
+h2 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #070707;
+
+
+}
+
 h1 {
-    font-size: 32px;
+    font-size: 45px;
     font-weight: bold;
-    margin-bottom: 20px;
-    color: #111111;
-    background-color: rgba(221, 221, 221, 0.651);
+    margin-bottom: 15px;
+    color: rgb(46, 49, 21);
+    background-color: #ddddddc7;
+    border-radius: 40px;
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+
+
 }
-h2{
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #111111;
-    
-}
-h3{
-    font-size: 32px;
+
+h3 {
+    font-size: 35px;
     font-weight: bold;
     margin-bottom: 20px;
     color: #111111;
     background-color: #f0f9ff5d;
+    margin-left: 750px;
+    width: 400px;
 }
-h4{
+
+h4 {
     color: rgb(31, 29, 29);
+    font-size: 23px;
 }
-h6{
+
+h6 {
     color: rgb(26, 25, 25);
     font-size: large;
 }
-h5{
+
+h5 {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #f7f3f3;
-    
+    color: #070707;
+
 }
+
+span {
+    font-size: 20px;
+    color: #070707;
+}
+
 /* Estilo para el menú */
-.menu-container {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-}
 
-.menu-container ul {
-    list-style: none;
-    padding: 0;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 250px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.menu-container ul:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.menu-container li {
+.space-y-2 ul li {
     font-size: 18px;
     margin-bottom: 10px;
     color: #333;
@@ -205,14 +250,14 @@ form input {
 
 form input:focus {
     background-color: #fff;
-    border-color: #FF5B5B;
+    border-color: rgb(107, 120, 49);
     outline: none;
 }
 
 form button {
     padding: 15px;
     font-size: 18px;
-    background-color: #FF5B5B;
+    background-color: rgb(107, 120, 49);
     color: white;
     border: none;
     border-radius: 5px;
@@ -221,11 +266,12 @@ form button {
 }
 
 form button:hover {
-    background-color: #FF4141;
+    background-color: rgb(87, 97, 40);
 }
 
 /* Estilo de los botones */
-button, a {
+button,
+a {
     cursor: pointer;
 }
 
@@ -234,38 +280,62 @@ a {
 }
 
 /* Efectos generales */
-h1, p, label, button {
+h1,
+p,
+label,
+button {
     transition: all 0.3s ease;
 }
 
-.eventos section div{
-    
+.eventos section div {
+
     width: 1000px;
     margin: 0 auto;
-    
+
 }
-img{
+
+img {
     width: 1000px;
-    height: 1000px;
-    
+    height: 600px;
+    border-radius: 20px;
+
 }
-ul{
+
+ul {
     list-style: none;
 }
+
 footer {
     clear: both;
     padding: 20px;
     border-top: 5px solid rgb(107, 120, 49);
     border-bottom: 5px solid rgb(107, 120, 49);
-    background-color: #f0f9ff77;
-    color: #111111;
-  }
-.subtitulo{
+    background-color: #f0f9ff8c;
     color: #111111;
 }
-.menu ul li{
+
+.subtitulo {
     color: #111111;
 }
-.menu p{
+
+.menu ul li {
     color: #111111;
+}
+
+.menu p {
+    color: #111111;
+    font-size: 18px;
+}
+
+.menu section {
+    background-color: #ddddddaf;
+}
+
+.reserva {
+    color: rgb(19, 20, 11);
+    background-attachment: fixed;
+    background-color: #f0f9ffc2;
+    width: 600px;
+    margin-left: 650px;
+
 }
